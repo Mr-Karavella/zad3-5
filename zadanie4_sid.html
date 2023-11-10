@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Zadanie 4 - Sidorenko</title>
+<script language="JavaScript">
+function WinOpen_z3()
+{
+window.open("Zadanie3_sid.html","okienko_z3","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+}
+function WinOpen_z4()
+{
+window.open("z4_sid.html","okienko_z4","toolbar=no,directories=no,menubar=no,height=380,width=360,top=200,left=400");
+}
+function WinOpen_z5(){
+	window.open("zadanie5_sid.html","okienko_z4","toolbar=no,directories=no,menubar=no,height=880,width=860,top=200,left=400");
+}
+function okno_zamknij()
+{
+window.close();
+}
+</script>
+<style>
+.Sidorenko {
+  font-size: 2cm;
+  text-align: left;
+  color: red;
+}
+</style>
+</head>
+<body>
+<form>
+
+  <footer class="Sidorenko">
+    Szkielec zaliczeniowy JavaScript Egor Sidorenko klasa 3G
+  </footer>
+  <input type="button" name="zadanie3" value="Zadanie3-Sidorenko" onclick="WinOpen_z3()">
+  <input type="button" name="zadanie4" value="Zadanie4-Sidorenko" onclick="WinOpen_z4()">
+  <input type="button" name="zadanie5" value="Zadanie5-Sidorenko" onclick="WinOpen_z5()">
+  <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</form>
+</body>
+</html>

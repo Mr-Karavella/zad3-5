@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Układ3</title>
+<script>
+// Funkcje JavaScript do otwierania i zamykania okien z grafikami
+function WinOpen_Sidorenko_1() {
+  window.open("grafika1.html", "grafika1", "width=400,height=500, top=400");
+}
+
+function WinOpen_Sidorenko_2() {
+  window.open("grafika2.html", "Grafika2", "width=400,height=500, left=400 top=250");
+}
+
+function WinOpen_Sidorenko_3() {
+  window.open("grafika3.html", "Grafika3", "width=400,height=500, left=600 top=100");
+}
+
+function WinOpen_Sidorenko_4() {
+  window.open("grafika4.html", "Grafika4", "width=400,height=500, left=800 top=00");
+}
+
+function okno_zamknij_Sidorenko() {
+  window.close();
+}
+</script>
+<style>
+.Sidorenko {
+  font-size: 2cm;
+  text-align: left;
+  color: red;
+}
+</style>
+</head>
+<body>
+  <footer class="Sidorenko">
+    wykonał: Egor Sidorenko mój numer w dzienniku 24, czyli
+mam układ [(24) mod 4 = 0] układ 3
+  </footer>
+<button onclick="WinOpen_Sidorenko_1()">grafika1</button>
+<button onclick="WinOpen_Sidorenko_2()">grafika2</button>
+<button onclick="WinOpen_Sidorenko_3()">grafika3</button>
+<button onclick="WinOpen_Sidorenko_4()">grafika4</button>
+<button onclick="okno_zamknij_Sidorenko()">Zamknij okno</button>
+</body>
+</html>
