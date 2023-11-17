@@ -8,6 +8,22 @@
   .question { font-weight: bold; }
   .answer { margin-bottom: 10px; }
 </style>
+<script type="text/javascript">
+// Funkcja otwierająca nowe okno z zadaniem 4
+function WinOpen() {
+  window.open('zadanie4.html', 'Zadanie4', 'width=800,height=600');
+}
+
+// Funkcja zamykająca obecne okno
+function okno_zamknij() {
+  window.close();
+}
+
+// Funkcja otwierająca nową stronę
+function createNewPage() {
+  window.open('nowa_strona.html', '_blank');
+}
+</script>
 </head>
 <body>
 
@@ -41,7 +57,7 @@
 <div class="answer">Aplikacje responsywne to takie, które dostosowują swój interfejs do rozmiaru ekranu urządzenia, na którym są wyświetlane.</div>
 
 <div class="question">10) Przepisz linie kody pod nimi wytłumaczenie jak działa ta ten fragment kodu</div>
-<div class="answer"><input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"></div>
+<div class="answer"><input type="button" value="Utwórz Nową Stronę" onclick="createNewPage()"/></div>
 <div class="answer">Gdy użytkownik kliknie ten przycisk, wywołana zostanie funkcja JavaScript `WinOpen`, która otworzy nowe okno przeglądarki.</div>
 
 <div class="question">12) Opisz następującą instrukcję window.close()</div>
@@ -49,7 +65,7 @@
 
 <!-- The rest of your questions and answers -->
 
-<input type="button" value="zamknij okno" onclick="window.close()"/>
+<input type="button" value="Zamknij okno" onclick="okno_zamknij()"/>
 
 </body>
 </html>
