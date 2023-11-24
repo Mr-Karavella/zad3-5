@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+<title>Proste Obliczenia</title>
+<meta charset="utf-8">
+</head>
+<body>
+<div style="color:green;font-size:61px;">
+<script language="JavaScript">
+var liczbaDni;
+var D1_SID = prompt("Dzien 1 =");
+var G1_SID = prompt("Godzina 1 ="); 
+var D2_SID = prompt("Dzien 2 =");
+var G2_SID = prompt("Godzina 2 =");
+liczbaDni = (D1_SID - D2_SID);
+var liczbaGodzin = G1_SID - G2_SID;
+
+var sekundy = (liczbaDni * 24 + liczbaGodzin) * 60 * 60;
+document.write("Liczba sekund między dniami " + sekundy + "<br>");
+</script>
+</div>
+</body>
+</html>
